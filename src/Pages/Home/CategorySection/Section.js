@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Section = ({ category }) => {
 
-    const { name, img } = category;
+    const { name, img, category_id } = category;
+    console.log(category_id);
 
     return (
         <div>
@@ -13,7 +15,7 @@ const Section = ({ category }) => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{name}</h2>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <Link to={`products/${category_id}`} ><button className="btn btn-primary">Buy Now</button></Link>
                     </div>
                 </div>
             </div>

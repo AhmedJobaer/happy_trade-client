@@ -1,27 +1,52 @@
 [
     {
-        "name": "Asus",
+        "name": "Asus Vivobook 14",
         "category_id": "1",
-        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
     },
     {
-        "name": "Lenovo",
+        "name": "Asus Zeenbook 14",
+        "category_id": "1",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
+    },
+    {
+        "name": "Lenovo Flex 5",
         "category_id": "2",
-        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
     },
     {
-        "name": "Dell",
-        "category_id": "1",
-        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+        "name": "Lenovo Ideapad 5",
+        "category_id": "2",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
     },
     {
-        "name": "Aser",
-        "category_id": "1",
-        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+        "name": "Dell Book 3",
+        "category_id": "3",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
     },
     {
-        "name": "Msi",
-        "category_id": "1",
-        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+        "name": "Dell Book 4",
+        "category_id": "3",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
+    },
+    {
+        "name": "Aser Book 4",
+        "category_id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
+    },
+    {
+        "name": "Aser book 5",
+        "category_id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
+    },
+    {
+        "name": "Msi Modren 4",
+        "category_id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
+    },
+    {
+        "name": "Msi Modren 4",
+        "category_id": "4",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
     }
 ]
