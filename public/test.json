@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Asus",
+        "category_id": "1",
+        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+    },
+    {
+        "name": "Lenovo",
+        "category_id": "2",
+        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+    },
+    {
+        "name": "Dell",
+        "category_id": "1",
+        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+    },
+    {
+        "name": "Aser",
+        "category_id": "1",
+        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+    },
+    {
+        "name": "Msi",
+        "category_id": "1",
+        "img": "https://www.nbplaza.com.my/34552-thickbox_default/asus-vivobook-flip-14-tm420u-aec176ws-14-fhd-2-in-1-touch-laptop-black-ryzen-5-5500u-8gb-512gb-ssd-ati-w11-hs-.jpg"
+    }
+]

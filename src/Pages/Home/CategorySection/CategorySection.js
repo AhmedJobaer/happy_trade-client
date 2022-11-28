@@ -1,20 +1,42 @@
-import React from 'react';
+import { useQuery } from '@tanstack/react-query';
+import React, { useEffect, useState } from 'react';
+import Loading from '../../Shared/Loading/Loading';
+import Section from './Section';
 
 const CategorySection = () => {
+
+    //const [category, setCategory] = useState([]);
+
+    const { data: categorySection = [], refetch, isLoading } = useQuery({
+        queryKey: ['categorySection'],
+        queryFn: () => fetch("http://localhost:5000/categorySection")
+            .then(res => res.json())
+    })
+    if (isLoading) {
+        return <Loading></Loading>
+    }
+
+    console.log(categorySection);
+
+    /* useEffect(() => {
+        fetch('http://localhost:5000/categorySection')
+            .then(res => res.json())
+            .then(data => setCategory(data))
+    }, []) */
+
+
+
+
     return (
         <div>
             <h2 className='text-3xl my-5 text-center'>Category Section</h2>
-            <div className="card w-96 bg-base-100 shadow-xl">
-                <figure className="px-10 pt-10">
-                    <img src="https://placeimg.com/400/225/arch" alt="Shoes" className="rounded-xl" />
-                </figure>
-                <div className="card-body items-center text-center">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                </div>
+            <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6'>
+                {
+                    categorySection.map(category => <Section
+                        key={category._id}
+                        category={category}
+                    ></Section>)
+                }
             </div>
         </div>
     );
