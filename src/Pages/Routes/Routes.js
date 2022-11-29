@@ -6,6 +6,7 @@ import AddProduct from "../Dashobard/AddProduct/AddProduct";
 import AllUser from "../Dashobard/AllUser/AllUser";
 import Dashboard from "../Dashobard/Dashboard";
 import MyProducts from "../Dashobard/MyProduct/MyProducts";
+import ErPage from "../ErrorPage/ErPage";
 import Home from "../Home/Home/Home";
 import Login from "../Home/Login/Login";
 import Products from "../Home/Products/Products";
@@ -63,6 +64,10 @@ export const router = createBrowserRouter([
                 element: <AllUser></AllUser>
             }
         ]
+    },
+    {
+        path: '*',
+        element: <ErPage></ErPage>
     }
 ])
 
