@@ -25,7 +25,7 @@ const Signup = () => {
                 updateUser(userInfo)
                     .then(() => {
                         //navigate('/');
-                        saveUser(data.name, data.email, data.type);
+                        saveUser(data.name, data.email, data.type)
                         console.log(userInfo);
                     })
                     .catch(err => console.log(err));

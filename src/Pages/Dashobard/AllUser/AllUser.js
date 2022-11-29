@@ -6,7 +6,7 @@ const AllUser = () => {
 
     const { data: allUser = [], refetch, isLoading } = useQuery({
         queryKey: ['allUser'],
-        queryFn: () => fetch("http://localhost:5000/allUser")
+        queryFn: () => fetch("http://localhost:5000/allUser",)
             .then(res => res.json())
     })
     if (isLoading) {

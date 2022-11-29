@@ -15,7 +15,7 @@ const Section = ({ category }) => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{name}</h2>
                     <div className="card-actions">
-                        <Link to={`products/${category_id}`} ><button className="btn btn-primary">Buy Now</button></Link>
+                        <Link to={`products/${category_id}`} ><button className="btn btn-primary">See All</button></Link>
                     </div>
                 </div>
             </div>

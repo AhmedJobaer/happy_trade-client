@@ -1,52 +1,17 @@
 [
     {
-        "name": "Asus Vivobook 14",
+        "name": "apple.com",
+        "email": "apple2@a.com",
+        "img": "https://i.ibb.co/GnFvwfk/clay-banks-Xv-S-u-KUo-Uao-unsplash.jpg",
         "category_id": "1",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Asus Zeenbook 14",
-        "category_id": "1",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Lenovo Flex 5",
-        "category_id": "2",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Lenovo Ideapad 5",
-        "category_id": "2",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Dell Book 3",
-        "category_id": "3",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Dell Book 4",
-        "category_id": "3",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Aser Book 4",
-        "category_id": "4",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Aser book 5",
-        "category_id": "4",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Msi Modren 4",
-        "category_id": "4",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
-    },
-    {
-        "name": "Msi Modren 4",
-        "category_id": "4",
-        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJX3Wx22U_u8l2AYgXVeNpmeR16q8gJMjqcX9itDnedQPx4SwXqDN6wgSqIcf0-6V4Mc&usqp=CAU"
+        "category_name": "Samsung",
+        "category_img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLJJyVcUiz7_wNA_-UgKzw26C_XB-bn7r0Zw&usqp=CAU",
+        "description": "We use modern technology to detect decay in the earliest stages, saving and preserving your teeth.",
+        "selling_price": "40",
+        "new_price": "42",
+        "location": "45",
+        "phon_no": "454",
+        "duration": "54",
+        "condition": "Excellent"
     }
 ]

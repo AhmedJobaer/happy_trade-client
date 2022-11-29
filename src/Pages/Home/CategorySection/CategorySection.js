@@ -35,6 +35,8 @@ const CategorySection = () => {
                     categorySection.map(category => <Section
                         key={category._id}
                         category={category}
+
+
                     ></Section>)
                 }
             </div>
