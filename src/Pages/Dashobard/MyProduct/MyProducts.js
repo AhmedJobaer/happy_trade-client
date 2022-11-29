@@ -6,7 +6,7 @@ import Loading from '../../Shared/Loading/Loading';
 const MyProducts = () => {
 
     const { user } = useContext(AuthContext);
-    console.log(user.email)
+    //console.log(user.email)
 
     const { data: myProducts = [], refetch, isLoading } = useQuery({
         queryKey: ['myProducts'],
@@ -19,8 +19,20 @@ const MyProducts = () => {
         return <Loading></Loading>
     }
 
+    const handelDelete = (myProducts) => {
+        fetch(`http://localhost:5000/myProducts/${myProducts._id}`, {
+            method: 'DELETE'
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                refetch();
+                alert("Successfully deleted");
+            })
+    }
 
-    console.log(myProducts);
+
+    //console.log(myProducts);
     return (
         <div>
             <h2>My product</h2>
@@ -31,8 +43,10 @@ const MyProducts = () => {
                         <tr>
                             <th></th>
                             <th>Name</th>
-                            <th>Job</th>
-                            <th>Email</th>
+                            <th>Price</th>
+                            <th>Img</th>
+                            <th>Action</th>
+
                         </tr>
                     </thead>
                     {
@@ -41,8 +55,15 @@ const MyProducts = () => {
                             <tr>
                                 <th>{id + 1}</th>
                                 <td>{user.name}</td>
-                                <td>{user.type}</td>
-                                <td>{user.email}</td>
+                                <td>{user.sellPrice}</td>
+                                <td><div className="avatar">
+                                    <div className="w-24 rounded">
+                                        <img src={user.img} alt='' />
+                                    </div>
+                                </div></td>
+                                <td><div>
+                                    <button className="btn btn-sm btn-success mb-1">Advertise</button> <br></br>
+                                    <button className="btn btn-sm btn-error" onClick={() => handelDelete(user)} >Delete</button></div></td>
                             </tr>
                         </tbody>)
                     }
