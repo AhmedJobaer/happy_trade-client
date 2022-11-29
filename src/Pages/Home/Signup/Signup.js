@@ -19,11 +19,14 @@ const Signup = () => {
                 console.log(user);
                 alert('User Created Successfully.')
                 const userInfo = {
-                    displayName: data.name
+                    displayName: data.name,
+                    displayType: data.type
                 }
                 updateUser(userInfo)
                     .then(() => {
-                        navigate('/');
+                        //navigate('/');
+                        saveUser(data.name, data.email, data.type)
+                        console.log(userInfo);
                     })
                     .catch(err => console.log(err));
             })
@@ -31,7 +34,28 @@ const Signup = () => {
                 console.log(error)
                 setSignUPError(error.message)
             });
+
+
     }
+
+
+    const saveUser = (name, email, type) => {
+        const user = { name, email, type };
+        fetch("http://localhost:5000/users", {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                navigate('/');
+            })
+    }
+
+
 
     return (
         <div className='h-[800px] flex justify-center items-center'>
@@ -64,7 +88,9 @@ const Signup = () => {
                         <label className="label">
                             <span className="label-text">Seller or Buyer</span>
                         </label>
-                        <select className="select select-bordered">
+                        <select name="type" {...register("type", {
+                            required: true
+                        })} className="select select-bordered">
                             <option disabled selected>Pick one</option>
                             <option>Seller</option>
                             <option>Buyer</option>
