@@ -22,7 +22,8 @@ const AddProduct = () => {
             buyPrice: data.buyPrice,
             location: data.location,
             description: data.des,
-            category_id: data.type
+            category_id: data.type,
+            img: data.imgLink
         }
 
         fetch("http://localhost:5000/addProduct", {

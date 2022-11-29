@@ -18,9 +18,14 @@ const Products = () => {
                             <h2 className="card-title">{product.name}
                                 <div className="badge badge-secondary">NEW</div></h2>
                             <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div className="badge badge-accent p-3">Price: {product.price}</div>
+                            <div className='flex justify-evenly'>
+                                <div className="badge badge-accent p-3">Selling Price: {product.sellPrice}</div>
+                                <div className="badge badge-accent p-3">Buying Price: {product.buyPrice}</div>
+                            </div>
+                            <h2 className=''>Location: {product.location}</h2>
+                            <h2 className=''>Description: {product.description}</h2>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Buy Now</button>
+                                <button className="btn btn-primary">Book Now</button>
                             </div>
                         </div>
                     </div>)

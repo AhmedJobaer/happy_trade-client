@@ -1,22 +1,29 @@
 import { useQuery } from '@tanstack/react-query';
-import React from 'react';
+import React, { useContext } from 'react';
+import { AuthContext } from '../../../context/AuthProvider';
 import Loading from '../../Shared/Loading/Loading';
 
-const AllUser = () => {
+const MyProducts = () => {
 
-    const { data: allUser = [], refetch, isLoading } = useQuery({
-        queryKey: ['allUser'],
-        queryFn: () => fetch("http://localhost:5000/allUser")
+    const { user } = useContext(AuthContext);
+    console.log(user.email)
+
+    const { data: myProducts = [], refetch, isLoading } = useQuery({
+        queryKey: ['myProducts'],
+        queryFn: () => fetch(`http://localhost:5000/myProducts/${user.email}`)
             .then(res => res.json())
     })
+
+
     if (isLoading) {
         return <Loading></Loading>
     }
 
-    //console.log(allUser);
 
+    console.log(myProducts);
     return (
         <div>
+            <h2>My product</h2>
             <div className="overflow-x-auto">
                 <table className="table w-full">
 
@@ -29,7 +36,7 @@ const AllUser = () => {
                         </tr>
                     </thead>
                     {
-                        allUser.map((user, id) => <tbody key={user._id}>
+                        myProducts.map((user, id) => <tbody key={user._id}>
 
                             <tr>
                                 <th>{id + 1}</th>
@@ -45,4 +52,4 @@ const AllUser = () => {
     );
 };
 
-export default AllUser;
+export default MyProducts;
