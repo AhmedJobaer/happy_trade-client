@@ -26,7 +26,7 @@ const AddProduct = () => {
             img: data.imgLink
         }
 
-        fetch("http://localhost:5000/addProduct", {
+        fetch("https://happy-trade-server.vercel.app/addProduct", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

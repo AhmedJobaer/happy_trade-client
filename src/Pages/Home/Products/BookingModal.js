@@ -19,7 +19,7 @@ const BookingModal = (booking) => {
             category_id: booking.booking.category_id,
         }
 
-        fetch("http://localhost:5000/bookingProducts", {
+        fetch("https://happy-trade-server.vercel.app/bookingProducts", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

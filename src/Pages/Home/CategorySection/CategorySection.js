@@ -9,7 +9,7 @@ const CategorySection = () => {
 
     const { data: categorySection = [], refetch, isLoading } = useQuery({
         queryKey: ['categorySection'],
-        queryFn: () => fetch("http://localhost:5000/categorySection")
+        queryFn: () => fetch("https://happy-trade-server.vercel.app/categorySection")
             .then(res => res.json())
     })
     if (isLoading) {
@@ -19,7 +19,7 @@ const CategorySection = () => {
     console.log(categorySection);
 
     /* useEffect(() => {
-        fetch('http://localhost:5000/categorySection')
+        fetch('https://happy-trade-server.vercel.app/categorySection')
             .then(res => res.json())
             .then(data => setCategory(data))
     }, []) */

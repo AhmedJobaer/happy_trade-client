@@ -6,7 +6,7 @@ const AllUser = () => {
 
     const { data: allUser = [], refetch, isLoading } = useQuery({
         queryKey: ['allUser'],
-        queryFn: () => fetch("http://localhost:5000/allUser")
+        queryFn: () => fetch("https://happy-trade-server.vercel.app/allUser")
             .then(res => res.json())
     })
     if (isLoading) {
@@ -16,7 +16,7 @@ const AllUser = () => {
     //console.log(allUser);
 
     const handelMakeAdmin = (id) => {
-        fetch(`http://localhost:5000/allUsers/admin/${id}`, {
+        fetch(`https://happy-trade-server.vercel.app/allUsers/admin/${id}`, {
             method: 'PUT'
         })
             .then(res => res.json())
@@ -29,7 +29,7 @@ const AllUser = () => {
     console.log(allUser);
 
     const handelDelete = (u) => {
-        fetch(`http://localhost:5000/allUsers/${u._id}`, {
+        fetch(`https://happy-trade-server.vercel.app/allUsers/${u._id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

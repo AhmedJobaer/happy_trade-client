@@ -11,7 +11,7 @@ const MyProducts = () => {
 
     const { data: myProducts = [], refetch, isLoading } = useQuery({
         queryKey: ['myProducts'],
-        queryFn: () => fetch(`http://localhost:5000/myProducts/${user.email}`)
+        queryFn: () => fetch(`https://happy-trade-server.vercel.app/myProducts/${user.email}`)
             .then(res => res.json())
     })
 
@@ -21,7 +21,7 @@ const MyProducts = () => {
     }
 
     const handelDelete = (myProducts) => {
-        fetch(`http://localhost:5000/myProducts/${myProducts._id}`, {
+        fetch(`https://happy-trade-server.vercel.app/myProducts/${myProducts._id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
