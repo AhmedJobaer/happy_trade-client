@@ -36,6 +36,7 @@ const AddProduct = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
+                alert("product added successfully")
             })
 
         console.log(product);
@@ -47,7 +48,7 @@ const AddProduct = () => {
             <h2>Adding Product</h2>
             <div className=''>
                 <div className='w-96 p-7'>
-                    <h2 className='text-xl text-center'>Sign Up</h2>
+
                     <form onSubmit={handleSubmit(handleSignUp)}>
 
                         <div className="form-control w-full max-w-xs">

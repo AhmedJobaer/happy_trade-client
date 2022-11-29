@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import BookingModal from './BookingModal';
 
 const Products = () => {
 
+    const [booking, setBooking] = useState(null);
     const products = useLoaderData();
     console.log(products);
 
@@ -25,10 +27,16 @@ const Products = () => {
                             <h2 className=''>Location: {product.location}</h2>
                             <h2 className=''>Description: {product.description}</h2>
                             <div className="card-actions justify-end">
-                                <button className="btn btn-primary">Book Now</button>
+                                <label className="btn btn-primary" onClick={() => setBooking(product)} htmlFor="my-modal-3">Book Now</label>
                             </div>
                         </div>
                     </div>)
+                }
+                {
+                    booking && <BookingModal
+
+                        booking={booking}
+                    ></BookingModal>
                 }
             </div>
         </div>

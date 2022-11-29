@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import toast, { Toaster } from 'react-hot-toast';
 import React, { useContext } from 'react';
 import { AuthContext } from '../../../context/AuthProvider';
 import Loading from '../../Shared/Loading/Loading';
@@ -28,6 +29,7 @@ const MyProducts = () => {
                 console.log(data);
                 refetch();
                 alert("Successfully deleted");
+                //toast.success('Successfully toasted!')
             })
     }
 
