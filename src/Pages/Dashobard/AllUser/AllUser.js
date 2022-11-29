@@ -26,6 +26,8 @@ const AllUser = () => {
             })
     }
 
+    console.log(allUser);
+
     const handelDelete = (u) => {
         fetch(`http://localhost:5000/allUsers/${u._id}`, {
             method: 'DELETE'
@@ -54,18 +56,17 @@ const AllUser = () => {
                             <th>Delete</th>
                         </tr>
                     </thead>
-                    {
-                        allUser.map((user, id) => <tbody key={user._id}>
+                    {allUser.map((user, id) => <tbody key={user._id}>
 
-                            <tr>
-                                <th>{id + 1}</th>
-                                <td>{user.name}</td>
-                                <td>{user.type}</td>
-                                <td>{user.email}</td>
-                                <td>{user?.role !== 'admin' && <button onClick={() => handelMakeAdmin(user._id)} className='btn btn-xs btn-primary'>Make Admin</button>}</td>
-                                <td>{user?.role !== 'admin' && <button onClick={() => handelDelete(user)} className='btn btn-xs btn-danger'>Delete</button>}</td>
-                            </tr>
-                        </tbody>)
+                        {user.role && <tr>
+                            <th>{id + 1}</th>
+                            <td>{user.name}</td>
+                            <td>{user.type}</td>
+                            <td>{user.email}</td>
+                            <td>{user?.role !== 'admin' && <button onClick={() => handelMakeAdmin(user._id)} className='btn btn-xs btn-primary'>Make Admin</button>}</td>
+                            <td>{user?.role !== 'admin' && <button onClick={() => handelDelete(user)} className='btn btn-xs btn-danger'>Delete</button>}</td>
+                        </tr>}
+                    </tbody>)
                     }
                 </table>
             </div>
