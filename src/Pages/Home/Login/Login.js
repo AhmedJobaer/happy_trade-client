@@ -42,7 +42,7 @@ const Login = () => {
                         <input type="text"
                             {...register("email", { required: "Email is required" })}
                             className="input input-bordered w-full max-w-xs" />
-                        {/* {errors.email && <p className='text-red-600' >{errors.email?.message}</p>} */}
+                        {errors.email && <p className='text-red-600' >{errors.email?.message}</p>}
                     </div>
                     <div className="form-control w-full max-w-xs">
                         <label className="label">
@@ -54,14 +54,14 @@ const Login = () => {
                                 minLength: { value: 6, message: "Password must be 6 charactors!" }
                             })}
                             className="input input-bordered w-full max-w-xs" />
-                        {/* {errors.password && <p className='text-red-600'>{errors.password?.message}</p>} */}
+                        {errors.password && <p className='text-red-600'>{errors.password?.message}</p>}
                         <label className="label">
                             <span className="label-text">Forget Password</span>
                         </label>
                     </div>
                     <input className='btn btn-accent w-full' value="Login" type="submit" />
                     <div>
-                        {/*  {loginError && <p className='text-red-600'>{loginError}</p>} */}
+                        {loginError && <p className='text-red-600'>{loginError}</p>}
                     </div>
                 </form>
                 <p>New to Doctors Portal? <Link className='text-secondary' to='/signup'>Create new account</Link></p>
