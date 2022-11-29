@@ -15,6 +15,19 @@ const AllUser = () => {
 
     //console.log(allUser);
 
+    const handelMakeAdmin = (id) => {
+        fetch(`http://localhost:5000/allUsers/admin/${id}`, {
+            method: 'PUT'
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                refetch();
+            })
+    }
+
+
+
     return (
         <div>
             <div className="overflow-x-auto">
@@ -38,7 +51,7 @@ const AllUser = () => {
                                 <td>{user.name}</td>
                                 <td>{user.type}</td>
                                 <td>{user.email}</td>
-                                <td><button className='btn btn-xs btn-primary'>Make Admin</button></td>
+                                <td>{user?.role !== 'admin' && <button onClick={() => handelMakeAdmin(user._id)} className='btn btn-xs btn-primary'>Make Admin</button>}</td>
                                 <td><button className='btn btn-xs btn-danger'>Delete</button></td>
                             </tr>
                         </tbody>)
